@@ -1,9 +1,5 @@
-const getFoo = () => {
-  if (process.env.NODE_ENV === 'development') {
-    console.log('dev')
-  }
-
-  return 'foo'
+function foo() {
+  return'development'===process.env.NODE_ENV&&'foo'
 }
 
-console.log(getFoo())
+console.log(foo())
